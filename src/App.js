@@ -5,7 +5,7 @@ import {Home} from './pages/home'
 import { Switch, Route } from 'react-router-dom'
 import { NotFound} from './pages/NotFound'
 
-import './App.css';
+import './desing/App.css';
 import 'bulma/css/bulma.css'
 
 class App extends Component {
@@ -14,8 +14,8 @@ class App extends Component {
     return (
       <div className="App">
         <Switch>
-          <Route exact path='/' Component={Home} />
-          <Route path='/detail/:id' Component={Detail} />
+          <Route exact path='/' component={Home} />
+          <Route path='/detail/:id' component={Detail} />
           <Route component={NotFound} />
         </Switch>
       </div>
